@@ -1,0 +1,21 @@
+.elemento-padre {
+    border: 1px solid black;
+    height: 450px;
+    position: relative;
+}
+
+.elemento-principal {
+    background: yellow;
+    padding: 10px;
+    /*position: static; no se mueve, podemos usar top, bottom, right y left*/
+    /*position: relative; /*me respeta posición pero se ve afectada por top, bottom, right y left*/
+    /*position: absolute; /*flota, ignora elementos alrededor, posicion se basa en elemento padre*/
+    /*position: fixed; /*no se ve afectada por el scroll*/
+    position: sticky; 
+    top: 10px;
+}
+
+.elemento-hijo {
+    background: gray;
+    padding: 10px;
+}
